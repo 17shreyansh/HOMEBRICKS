@@ -1,0 +1,125 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  @font-face {
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 400 700;
+    font-display: swap;
+    src: url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800&display=swap');
+  }
+
+  @font-face {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 300 700;
+    font-display: swap;
+    src: url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+  }
+
+  :root {
+    --color-primary-black: #0E0E0E;
+    --color-dark-gray: #121212;
+    --color-medium-gray: #222222;
+    --color-gold: #D2A15C;
+    --color-white: #FFFFFF;
+  }
+
+  * {
+    @apply antialiased;
+  }
+
+  body {
+    @apply bg-[#0E0E0E] text-white;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Playfair Display', Georgia, serif;
+  }
+
+  h1 {
+    font-size: 4.5rem;
+    font-weight: 700;
+    line-height: 1.1;
+    letter-spacing: -0.02em;
+  }
+
+  h2 {
+    font-size: 3.5rem;
+    font-weight: 700;
+    line-height: 1.2;
+    letter-spacing: -0.01em;
+  }
+
+  h3 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    line-height: 1.3;
+  }
+
+  h4 {
+    font-size: 2rem;
+    font-weight: 600;
+    line-height: 1.4;
+  }
+
+  h5 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    line-height: 1.4;
+  }
+
+  p {
+    font-size: 1.125rem;
+    line-height: 1.7;
+    font-weight: 400;
+  }
+
+  @media (max-width: 768px) {
+    h1 {
+      font-size: 2.5rem;
+    }
+    
+    h2 {
+      font-size: 2rem;
+    }
+    
+    h3 {
+      font-size: 1.75rem;
+    }
+    
+    h4 {
+      font-size: 1.5rem;
+    }
+    
+    p {
+      font-size: 1rem;
+    }
+  }
+}
+
+@layer utilities {
+  .glass-effect {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+  }
+
+  .gold-gradient {
+    background: linear-gradient(135deg, #D2A15C 0%, #F4E4C1 100%);
+  }
+
+  .dark-gradient {
+    background: linear-gradient(180deg, #121212 0%, #222222 100%);
+  }
+
+  .text-gradient {
+    background: linear-gradient(135deg, #D2A15C 0%, #F4E4C1 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+}
