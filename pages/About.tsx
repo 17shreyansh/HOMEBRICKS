@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { CheckCircle2, Users, Award, Target, Heart } from 'lucide-react';
+import { Users, Award, Target, Heart } from 'lucide-react';
 import { ImageWithFallback } from '../components/figma/ImageWithFallback';
 
 export default function About() {
