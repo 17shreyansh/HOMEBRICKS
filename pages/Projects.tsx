@@ -147,7 +147,7 @@ export default function Projects() {
     <div className="pt-20">
       {/* Hero Section */}
       <section className="relative py-24 overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-b from-[#0E0E0E] via-[#121212] to-[#0E0E0E]" />
+        <div className="absolute inset-0 bg-[#121212]" />
         
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
@@ -156,7 +156,7 @@ export default function Projects() {
             className="text-center"
           >
             <div className="inline-block px-4 py-2 glass-effect rounded-full mb-6">
-              <span className="text-[#D2A15C] text-sm">Our Projects</span>
+              <span className="text-[#DC2626] text-sm">Our Projects</span>
             </div>
             <h1 className="text-white mb-6">
               Portfolio of <span className="text-gradient">Excellence</span>
@@ -179,7 +179,7 @@ export default function Projects() {
                 onClick={() => setFilter(filterItem)}
                 className={`px-6 py-2.5 rounded-full transition-all capitalize ${
                   filter === filterItem
-                    ? 'bg-[#D2A15C] text-[#0E0E0E]'
+                    ? 'bg-[#DC2626] text-white'
                     : 'glass-effect text-white hover:bg-white/10'
                 }`}
               >
@@ -191,7 +191,7 @@ export default function Projects() {
       </section>
 
       {/* Projects Grid */}
-      <section className="py-24 bg-gradient-to-b from-[#121212] to-[#0E0E0E]">
+      <section className="py-24 bg-[#0E0E0E]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {filteredProjects.map((project, index) => (
@@ -212,9 +212,9 @@ export default function Projects() {
                     alt={project.title}
                     className="w-full h-80 object-cover group-hover:scale-110 transition-transform duration-500"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black via-black/20 to-transparent opacity-60 group-hover:opacity-80 transition-opacity" />
+                  <div className="absolute inset-0 bg-black/60 group-hover:bg-black/80 transition-all" />
                   <div className="absolute bottom-0 left-0 right-0 p-6">
-                    <div className="inline-block px-3 py-1 bg-[#D2A15C] rounded-full text-[#0E0E0E] text-xs mb-3 capitalize">
+                    <div className="inline-block px-3 py-1 bg-[#DC2626] rounded-full text-white text-xs mb-3 capitalize">
                       {project.category}
                     </div>
                     <h4 className="text-white mb-2">{project.title}</h4>
@@ -270,7 +270,7 @@ export default function Projects() {
                           key={idx}
                           onClick={() => setCurrentImageIndex(idx)}
                           className={`w-2 h-2 rounded-full transition-all ${
-                            idx === currentImageIndex ? 'bg-[#D2A15C] w-8' : 'bg-white/50'
+                            idx === currentImageIndex ? 'bg-[#DC2626] w-8' : 'bg-white/50'
                           }`}
                         />
                       ))}
@@ -282,7 +282,7 @@ export default function Projects() {
               {/* Project Details */}
               <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
                 <div className="lg:col-span-2">
-                  <div className="inline-block px-3 py-1 bg-[#D2A15C] rounded-full text-[#0E0E0E] text-sm mb-4 capitalize">
+                  <div className="inline-block px-3 py-1 bg-[#DC2626] rounded-full text-white text-sm mb-4 capitalize">
                     {selectedProjectData.category}
                   </div>
                   <h2 className="text-white mb-4">{selectedProjectData.title}</h2>
@@ -298,9 +298,9 @@ export default function Projects() {
                   </p>
 
                   {/* Testimonial */}
-                  <div className="glass-effect p-6 rounded-xl border-l-4 border-[#D2A15C]">
+                  <div className="glass-effect p-6 rounded-xl border-l-4 border-[#DC2626]">
                     <p className="text-white italic mb-3">"{selectedProjectData.testimonial.text}"</p>
-                    <p className="text-[#D2A15C]">— {selectedProjectData.testimonial.author}</p>
+                    <p className="text-[#DC2626]">— {selectedProjectData.testimonial.author}</p>
                   </div>
                 </div>
 
@@ -310,7 +310,7 @@ export default function Projects() {
                     <ul className="space-y-3">
                       {selectedProjectData.scope.map((item, idx) => (
                         <li key={idx} className="flex items-center space-x-2 text-gray-300">
-                          <div className="w-1.5 h-1.5 rounded-full bg-[#D2A15C]" />
+                          <div className="w-1.5 h-1.5 rounded-full bg-[#DC2626]" />
                           <span>{item}</span>
                         </li>
                       ))}

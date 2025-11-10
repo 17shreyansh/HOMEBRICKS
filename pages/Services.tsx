@@ -109,7 +109,7 @@ export default function Services() {
     <div className="pt-20">
       {/* Hero Section */}
       <section className="relative py-24 overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-b from-[#0E0E0E] via-[#121212] to-[#0E0E0E]" />
+        <div className="absolute inset-0 bg-[#121212]" />
         
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
@@ -118,7 +118,7 @@ export default function Services() {
             className="text-center"
           >
             <div className="inline-block px-4 py-2 glass-effect rounded-full mb-6">
-              <span className="text-[#D2A15C] text-sm">Our Services</span>
+              <span className="text-[#DC2626] text-sm">Our Services</span>
             </div>
             <h1 className="text-white mb-6">
               Comprehensive <span className="text-gradient">Construction Solutions</span>
@@ -151,7 +151,7 @@ export default function Services() {
                   <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 p-6 lg:p-8">
                     {/* Icon and Title */}
                     <div className="lg:col-span-2 flex items-center space-x-6">
-                      <div className="w-16 h-16 flex-shrink-0 rounded-xl bg-gradient-to-br from-[#D2A15C] to-[#F4E4C1] flex items-center justify-center">
+                      <div className="w-16 h-16 flex-shrink-0 rounded-xl bg-[#DC2626] flex items-center justify-center">
                         <service.icon className="w-8 h-8 text-[#0E0E0E]" />
                       </div>
                       <div className="flex-1">
@@ -167,7 +167,7 @@ export default function Services() {
                         transition={{ duration: 0.3 }}
                         className="w-12 h-12 rounded-full glass-effect flex items-center justify-center"
                       >
-                        <ChevronDown className="w-6 h-6 text-[#D2A15C]" />
+                        <ChevronDown className="w-6 h-6 text-[#DC2626]" />
                       </motion.div>
                     </div>
                   </div>
@@ -200,7 +200,7 @@ export default function Services() {
                             <ul className="space-y-3">
                               {service.details.map((detail, idx) => (
                                 <li key={idx} className="flex items-start space-x-3">
-                                  <CheckCircle2 className="w-5 h-5 text-[#D2A15C] flex-shrink-0 mt-1" />
+                                  <CheckCircle2 className="w-5 h-5 text-[#DC2626] flex-shrink-0 mt-1" />
                                   <span className="text-gray-300">{detail}</span>
                                 </li>
                               ))}
@@ -218,7 +218,7 @@ export default function Services() {
       </section>
 
       {/* Process Section */}
-      <section className="py-24 bg-gradient-to-b from-[#121212] to-[#0E0E0E]">
+      <section className="py-24 bg-[#0E0E0E]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -247,11 +247,11 @@ export default function Services() {
                 transition={{ delay: index * 0.1 }}
                 className="glass-effect p-8 rounded-2xl relative"
               >
-                <div className="text-[#D2A15C] mb-4 opacity-20 absolute top-4 right-4">
+                <div className="text-[#DC2626] mb-4 opacity-20 absolute top-4 right-4">
                   {process.step}
                 </div>
-                <div className="w-12 h-12 rounded-full bg-gradient-to-br from-[#D2A15C] to-[#F4E4C1] flex items-center justify-center mb-4">
-                  <span className="text-[#0E0E0E]">{process.step}</span>
+                <div className="w-12 h-12 rounded-full bg-[#DC2626] flex items-center justify-center mb-4">
+                  <span className="text-white">{process.step}</span>
                 </div>
                 <h5 className="text-white mb-3">{process.title}</h5>
                 <p className="text-gray-400 text-sm">{process.desc}</p>
@@ -275,7 +275,7 @@ export default function Services() {
             </p>
             <a
               href="/contact"
-              className="inline-block px-8 py-4 bg-[#D2A15C] text-[#0E0E0E] rounded-full hover:bg-[#F4E4C1] transition-all"
+              className="inline-block px-8 py-4 bg-[#DC2626] text-white rounded-full hover:bg-[#F87171] transition-all"
             >
               Get Your Free Quote
             </a>

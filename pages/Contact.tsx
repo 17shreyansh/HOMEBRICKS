@@ -74,7 +74,7 @@ export default function Contact() {
             className="text-center"
           >
             <div className="inline-block px-4 py-2 glass-effect rounded-full mb-6">
-              <span className="text-[#D2A15C] text-sm">Contact Us</span>
+              <span className="text-[#DC2626] text-sm">Contact Us</span>
             </div>
             <h1 className="text-white mb-6">
               Let's Build Your <span className="text-gradient">Dream Project</span>
@@ -100,14 +100,14 @@ export default function Contact() {
                 transition={{ delay: index * 0.1 }}
                 className="glass-effect p-6 rounded-2xl text-center hover:bg-white/10 transition-all"
               >
-                <div className="w-14 h-14 mx-auto mb-4 rounded-full bg-gradient-to-br from-[#D2A15C] to-[#F4E4C1] flex items-center justify-center">
+                <div className="w-14 h-14 mx-auto mb-4 rounded-full bg-gradient-to-br from-[#DC2626] to-[#F87171] flex items-center justify-center">
                   <info.icon className="w-7 h-7 text-[#0E0E0E]" />
                 </div>
                 <h5 className="text-white mb-3">{info.title}</h5>
                 {info.details.map((detail, idx) => (
                   <p key={idx} className="text-gray-400 text-sm mb-1">
                     {info.action ? (
-                      <a href={info.action} className="hover:text-[#D2A15C] transition-colors">
+                      <a href={info.action} className="hover:text-[#DC2626] transition-colors">
                         {detail}
                       </a>
                     ) : (
@@ -149,7 +149,7 @@ export default function Contact() {
                       required
                       value={formData.name}
                       onChange={handleChange}
-                      className="w-full px-4 py-3 rounded-xl glass-effect text-white placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-[#D2A15C]"
+                      className="w-full px-4 py-3 rounded-xl glass-effect text-white placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-[#DC2626]"
                       placeholder="John Doe"
                     />
                   </div>
@@ -165,7 +165,7 @@ export default function Contact() {
                       required
                       value={formData.phone}
                       onChange={handleChange}
-                      className="w-full px-4 py-3 rounded-xl glass-effect text-white placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-[#D2A15C]"
+                      className="w-full px-4 py-3 rounded-xl glass-effect text-white placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-[#DC2626]"
                       placeholder="+91 98765 43210"
                     />
                   </div>
@@ -181,7 +181,7 @@ export default function Contact() {
                     name="email"
                     value={formData.email}
                     onChange={handleChange}
-                    className="w-full px-4 py-3 rounded-xl glass-effect text-white placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-[#D2A15C]"
+                    className="w-full px-4 py-3 rounded-xl glass-effect text-white placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-[#DC2626]"
                     placeholder="john@example.com"
                   />
                 </div>
@@ -198,7 +198,7 @@ export default function Contact() {
                       required
                       value={formData.city}
                       onChange={handleChange}
-                      className="w-full px-4 py-3 rounded-xl glass-effect text-white placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-[#D2A15C]"
+                      className="w-full px-4 py-3 rounded-xl glass-effect text-white placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-[#DC2626]"
                       placeholder="Delhi"
                     />
                   </div>
@@ -213,7 +213,7 @@ export default function Contact() {
                       name="plotSize"
                       value={formData.plotSize}
                       onChange={handleChange}
-                      className="w-full px-4 py-3 rounded-xl glass-effect text-white placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-[#D2A15C]"
+                      className="w-full px-4 py-3 rounded-xl glass-effect text-white placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-[#DC2626]"
                       placeholder="2000"
                     />
                   </div>
@@ -228,7 +228,7 @@ export default function Contact() {
                     name="budget"
                     value={formData.budget}
                     onChange={handleChange}
-                    className="w-full px-4 py-3 rounded-xl glass-effect text-white focus:outline-none focus:ring-2 focus:ring-[#D2A15C]"
+                    className="w-full px-4 py-3 rounded-xl glass-effect text-white focus:outline-none focus:ring-2 focus:ring-[#DC2626]"
                   >
                     <option value="">Select budget range</option>
                     <option value="10-25">₹10-25 Lakhs</option>
@@ -248,7 +248,7 @@ export default function Contact() {
                     rows={4}
                     value={formData.message}
                     onChange={handleChange}
-                    className="w-full px-4 py-3 rounded-xl glass-effect text-white placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-[#D2A15C] resize-none"
+                    className="w-full px-4 py-3 rounded-xl glass-effect text-white placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-[#DC2626] resize-none"
                     placeholder="Tell us about your project..."
                   />
                 </div>
@@ -256,7 +256,7 @@ export default function Contact() {
                 <div className="flex flex-col sm:flex-row gap-4">
                   <button
                     type="submit"
-                    className="flex-1 flex items-center justify-center space-x-2 px-6 py-4 bg-[#D2A15C] text-[#0E0E0E] rounded-full hover:bg-[#F4E4C1] transition-all"
+                    className="flex-1 flex items-center justify-center space-x-2 px-6 py-4 bg-[#DC2626] text-white rounded-full hover:bg-[#F87171] transition-all"
                   >
                     <Send className="w-5 h-5" />
                     <span>Send Message</span>

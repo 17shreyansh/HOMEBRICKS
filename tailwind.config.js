@@ -11,8 +11,8 @@ export default {
         primary: {
           black: '#0E0E0E',
           gray: '#121212',
-          gold: '#D2A15C',
-          light: '#F4E4C1'
+          red: '#DC2626',
+          light: '#F87171'
         }
       },
       fontFamily: {

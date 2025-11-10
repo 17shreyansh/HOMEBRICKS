@@ -23,7 +23,7 @@
     --color-primary-black: #0E0E0E;
     --color-dark-gray: #121212;
     --color-medium-gray: #222222;
-    --color-gold: #D2A15C;
+    --color-red: #DC2626;
     --color-white: #FFFFFF;
   }
 
@@ -108,18 +108,13 @@
     border: 1px solid rgba(255, 255, 255, 0.1);
   }
 
-  .gold-gradient {
-    background: linear-gradient(135deg, #D2A15C 0%, #F4E4C1 100%);
-  }
+
 
   .dark-gradient {
     background: linear-gradient(180deg, #121212 0%, #222222 100%);
   }
 
   .text-gradient {
-    background: linear-gradient(135deg, #D2A15C 0%, #F4E4C1 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
+    color: #DC2626;
   }
 }

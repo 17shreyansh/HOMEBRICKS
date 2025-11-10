@@ -81,7 +81,7 @@ export default function About() {
     <div className="pt-20">
       {/* Hero Section */}
       <section className="relative py-24 overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-b from-[#0E0E0E] via-[#121212] to-[#0E0E0E]" />
+        <div className="absolute inset-0 bg-[#121212]" />
         
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
@@ -90,7 +90,7 @@ export default function About() {
             className="text-center"
           >
             <div className="inline-block px-4 py-2 glass-effect rounded-full mb-6">
-              <span className="text-[#D2A15C] text-sm">About Us</span>
+              <span className="text-[#DC2626] text-sm">About Us</span>
             </div>
             <h1 className="text-white mb-6">
               Crafting Spaces, <span className="text-gradient">Building Legacies</span>
@@ -127,11 +127,11 @@ export default function About() {
               </p>
               <div className="grid grid-cols-2 gap-6 mt-8">
                 <div className="glass-effect p-6 rounded-xl">
-                  <div className="text-[#D2A15C] mb-2">500+</div>
+                  <div className="text-[#DC2626] mb-2">500+</div>
                   <p className="text-white text-sm">Projects Completed</p>
                 </div>
                 <div className="glass-effect p-6 rounded-xl">
-                  <div className="text-[#D2A15C] mb-2">100%</div>
+                  <div className="text-[#DC2626] mb-2">100%</div>
                   <p className="text-white text-sm">Client Satisfaction</p>
                 </div>
               </div>
@@ -143,7 +143,7 @@ export default function About() {
               viewport={{ once: true }}
             >
               <div className="relative">
-                <div className="absolute inset-0 bg-gradient-to-br from-[#D2A15C] to-[#F4E4C1] rounded-2xl transform -rotate-6" />
+                <div className="absolute inset-0 bg-[#DC2626] rounded-2xl transform -rotate-6" />
                 <ImageWithFallback
                   src="https://images.unsplash.com/photo-1756227584303-f1400daaa69d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtb2Rlcm4lMjBhcmNoaXRlY3R1cmUlMjBidWlsZGluZ3xlbnwxfHx8fDE3NjI2MzUwNTd8MA&ixlib=rb-4.1.0&q=80&w=1080"
                   alt="Modern Architecture"
@@ -156,7 +156,7 @@ export default function About() {
       </section>
 
       {/* Company Timeline */}
-      <section className="py-24 bg-gradient-to-b from-[#121212] to-[#0E0E0E]">
+      <section className="py-24 bg-[#0E0E0E]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -183,12 +183,12 @@ export default function About() {
                 <div className="flex items-start gap-6">
                   {/* Timeline Line */}
                   {index !== timeline.length - 1 && (
-                    <div className="absolute left-[2.5rem] top-12 w-0.5 h-full bg-gradient-to-b from-[#D2A15C] to-transparent" />
+                    <div className="absolute left-[2.5rem] top-12 w-0.5 h-full bg-[#DC2626]" />
                   )}
 
                   {/* Year Badge */}
-                  <div className="relative z-10 w-20 h-20 flex-shrink-0 rounded-full bg-gradient-to-br from-[#D2A15C] to-[#F4E4C1] flex items-center justify-center">
-                    <span className="text-[#0E0E0E]">{item.year}</span>
+                  <div className="relative z-10 w-20 h-20 flex-shrink-0 rounded-full bg-[#DC2626] flex items-center justify-center">
+                    <span className="text-white">{item.year}</span>
                   </div>
 
                   {/* Content */}
@@ -228,7 +228,7 @@ export default function About() {
                 transition={{ delay: index * 0.1 }}
                 className="glass-effect p-8 rounded-2xl text-center hover:bg-white/10 transition-all"
               >
-                <div className="w-16 h-16 mx-auto mb-6 rounded-full bg-gradient-to-br from-[#D2A15C] to-[#F4E4C1] flex items-center justify-center">
+                <div className="w-16 h-16 mx-auto mb-6 rounded-full bg-[#DC2626] flex items-center justify-center">
                   <value.icon className="w-8 h-8 text-[#0E0E0E]" />
                 </div>
                 <h5 className="text-white mb-3">{value.title}</h5>
@@ -242,7 +242,7 @@ export default function About() {
       </section>
 
       {/* Team Section */}
-      <section className="py-24 bg-gradient-to-b from-[#121212] to-[#0E0E0E]">
+      <section className="py-24 bg-[#0E0E0E]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -272,10 +272,10 @@ export default function About() {
                     alt={member.name}
                     className="w-full h-80 object-cover group-hover:scale-110 transition-transform duration-500"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent" />
+                  <div className="absolute inset-0 bg-black/60" />
                 </div>
                 <h5 className="text-white mb-1">{member.name}</h5>
-                <p className="text-[#D2A15C] text-sm">{member.role}</p>
+                <p className="text-[#DC2626] text-sm">{member.role}</p>
               </motion.div>
             ))}
           </div>

@@ -35,13 +35,15 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-20">
           {/* Logo */}
-          <Link to="/" className="flex items-center space-x-2">
-            <div className="w-10 h-10 bg-gradient-to-br from-[#D2A15C] to-[#F4E4C1] rounded-md flex items-center justify-center">
-              <span className="text-[#0E0E0E]">HB</span>
-            </div>
+          <Link to="/" className="flex items-center space-x-3">
+            <img 
+              src="/logo.png" 
+              alt="Homebricks Buildtech Logo" 
+              className="w-12 h-12 object-contain rounded-full"
+            />
             <div className="flex flex-col">
               <span className="text-white tracking-tight">Homebricks Buildtech</span>
-              <span className="text-[#D2A15C] text-xs">The Construction Co.</span>
+              <span className="text-[#DC2626] text-xs">The Construction Co.</span>
             </div>
           </Link>
 
@@ -53,22 +55,22 @@ export default function Navbar() {
                 to={link.path}
                 className={`relative transition-colors ${
                   location.pathname === link.path
-                    ? 'text-[#D2A15C]'
-                    : 'text-white hover:text-[#D2A15C]'
+                    ? 'text-[#DC2626]'
+                    : 'text-white hover:text-[#DC2626]'
                 }`}
               >
                 {link.name}
                 {location.pathname === link.path && (
                   <motion.div
                     layoutId="navbar-indicator"
-                    className="absolute -bottom-1 left-0 right-0 h-0.5 bg-[#D2A15C]"
+                    className="absolute -bottom-1 left-0 right-0 h-0.5 bg-[#DC2626]"
                   />
                 )}
               </Link>
             ))}
             <a
               href="tel:+919876543210"
-              className="flex items-center space-x-2 px-6 py-2.5 bg-[#D2A15C] text-[#0E0E0E] rounded-full hover:bg-[#F4E4C1] transition-all"
+              className="flex items-center space-x-2 px-6 py-2.5 bg-[#DC2626] text-white rounded-full hover:bg-[#F87171] transition-all"
             >
               <Phone className="w-4 h-4" />
               <span>Call Us</span>
@@ -102,7 +104,7 @@ export default function Navbar() {
                   onClick={() => setIsMobileMenuOpen(false)}
                   className={`block py-2 ${
                     location.pathname === link.path
-                      ? 'text-[#D2A15C]'
+                      ? 'text-[#DC2626]'
                       : 'text-white'
                   }`}
                 >
@@ -111,7 +113,7 @@ export default function Navbar() {
               ))}
               <a
                 href="tel:+919876543210"
-                className="flex items-center justify-center space-x-2 w-full px-6 py-3 bg-[#D2A15C] text-[#0E0E0E] rounded-full"
+                className="flex items-center justify-center space-x-2 w-full px-6 py-3 bg-[#DC2626] text-white rounded-full"
               >
                 <Phone className="w-4 h-4" />
                 <span>Call Us</span>

@@ -82,7 +82,7 @@ export default function Home() {
             alt="Luxury Construction"
             className="w-full h-full object-cover"
           />
-          <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/50 to-[#0E0E0E]" />
+          <div className="absolute inset-0 bg-black/70" />
         </div>
 
         {/* Hero Content */}
@@ -114,7 +114,7 @@ export default function Home() {
           >
             <Link
               to="/contact"
-              className="group px-8 py-4 bg-[#D2A15C] text-[#0E0E0E] rounded-full hover:bg-[#F4E4C1] transition-all flex items-center justify-center space-x-2"
+              className="group px-8 py-4 bg-[#DC2626] text-white rounded-full hover:bg-[#F87171] transition-all flex items-center justify-center space-x-2"
             >
               <span>Get a Free Quote</span>
               <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
@@ -139,14 +139,14 @@ export default function Home() {
             <motion.div
               animate={{ y: [0, 12, 0] }}
               transition={{ duration: 1.5, repeat: Infinity }}
-              className="w-1.5 h-1.5 bg-[#D2A15C] rounded-full"
+              className="w-1.5 h-1.5 bg-[#DC2626] rounded-full"
             />
           </div>
         </motion.div>
       </section>
 
       {/* Stats Section */}
-      <section className="py-16 bg-gradient-to-b from-[#0E0E0E] to-[#121212]">
+      <section className="py-16 bg-[#121212]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
             {stats.map((stat, index) => (
@@ -159,9 +159,9 @@ export default function Home() {
                 className="text-center"
               >
                 <div className="w-16 h-16 mx-auto mb-4 rounded-full glass-effect flex items-center justify-center">
-                  <stat.icon className="w-8 h-8 text-[#D2A15C]" />
+                  <stat.icon className="w-8 h-8 text-[#DC2626]" />
                 </div>
-                <div className="text-[#D2A15C] mb-2">{stat.value}</div>
+                <div className="text-[#DC2626] mb-2">{stat.value}</div>
                 <p className="text-gray-400 text-sm">{stat.label}</p>
               </motion.div>
             ))}
@@ -195,16 +195,16 @@ export default function Home() {
                 whileHover={{ y: -8, transition: { duration: 0.3 } }}
                 className="group relative glass-effect rounded-2xl p-8 hover:bg-white/10 transition-all cursor-pointer"
               >
-                <div className="w-14 h-14 rounded-xl bg-gradient-to-br from-[#D2A15C] to-[#F4E4C1] flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                <div className="w-14 h-14 rounded-xl bg-[#DC2626] flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
                   <service.icon className="w-7 h-7 text-[#0E0E0E]" />
                 </div>
-                <h4 className="text-white mb-3 group-hover:text-[#D2A15C] transition-colors">
+                <h4 className="text-white mb-3 group-hover:text-[#DC2626] transition-colors">
                   {service.title}
                 </h4>
                 <p className="text-gray-400 text-sm leading-relaxed">
                   {service.description}
                 </p>
-                <div className="mt-4 flex items-center text-[#D2A15C] opacity-0 group-hover:opacity-100 transition-opacity">
+                <div className="mt-4 flex items-center text-[#DC2626] opacity-0 group-hover:opacity-100 transition-opacity">
                   <span className="text-sm">Learn more</span>
                   <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-2 transition-transform" />
                 </div>
@@ -215,7 +215,7 @@ export default function Home() {
       </section>
 
       {/* Why Choose Us */}
-      <section className="py-24 bg-gradient-to-b from-[#121212] to-[#0E0E0E]">
+      <section className="py-24 bg-[#121212]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -232,9 +232,9 @@ export default function Home() {
           <div className="max-w-4xl mx-auto">
             <div className="glass-effect rounded-2xl overflow-hidden">
               {/* Table Header */}
-              <div className="grid grid-cols-2 bg-gradient-to-r from-[#D2A15C] to-[#F4E4C1] p-6">
-                <div className="text-[#0E0E0E]">Homebricks Buildtech</div>
-                <div className="text-[#0E0E0E]">Other Contractors</div>
+              <div className="grid grid-cols-2 bg-[#DC2626] p-6">
+                <div className="text-white">Homebricks Buildtech</div>
+                <div className="text-white">Other Contractors</div>
               </div>
 
               {/* Comparison Rows */}
@@ -273,17 +273,17 @@ export default function Home() {
               className="order-2 lg:order-1"
             >
               <div className="inline-block px-4 py-2 glass-effect rounded-full mb-6">
-                <span className="text-[#D2A15C] text-sm">Leadership</span>
+                <span className="text-[#DC2626] text-sm">Leadership</span>
               </div>
               <h2 className="text-white mb-6">Meet Our Founder</h2>
-              <h3 className="text-[#D2A15C] mb-4">Ashu Saifi</h3>
+              <h3 className="text-[#DC2626] mb-4">Ashu Saifi</h3>
               <h5 className="text-gray-400 mb-6">CEO & Founder</h5>
               <p className="text-gray-300 mb-6 leading-relaxed">
                 With over 15 years of experience in the construction and interior design industry, 
                 Ashu Saifi founded Homebricks Buildtech with a vision to transform spaces and create 
                 homes that inspire.
               </p>
-              <div className="glass-effect p-6 rounded-xl border-l-4 border-[#D2A15C]">
+              <div className="glass-effect p-6 rounded-xl border-l-4 border-[#DC2626]">
                 <p className="text-white italic">
                   "Quality is not an act, it is a habit. Every project we undertake is a testament 
                   to our commitment to excellence and our passion for creating spaces that stand 
@@ -299,7 +299,7 @@ export default function Home() {
               className="order-1 lg:order-2"
             >
               <div className="relative">
-                <div className="absolute inset-0 bg-gradient-to-br from-[#D2A15C] to-[#F4E4C1] rounded-2xl transform rotate-6" />
+                <div className="absolute inset-0 bg-[#DC2626] rounded-2xl transform rotate-6" />
                 <ImageWithFallback
                   src="https://images.unsplash.com/photo-1610631066894-62452ccb927c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxwcm9mZXNzaW9uYWwlMjBDRU8lMjBwb3J0cmFpdHxlbnwxfHx8fDE3NjI2MDgwNzZ8MA&ixlib=rb-4.1.0&q=80&w=1080"
                   alt="Ashu Saifi - CEO & Founder"
@@ -312,7 +312,7 @@ export default function Home() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-24 bg-gradient-to-b from-[#0E0E0E] to-[#121212]">
+      <section className="py-24 bg-[#121212]">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -325,7 +325,7 @@ export default function Home() {
             </p>
             <Link
               to="/contact"
-              className="inline-flex items-center space-x-2 px-8 py-4 bg-[#D2A15C] text-[#0E0E0E] rounded-full hover:bg-[#F4E4C1] transition-all"
+              className="inline-flex items-center space-x-2 px-8 py-4 bg-[#DC2626] text-white rounded-full hover:bg-[#F87171] transition-all"
             >
               <span>Get Your Free Quote</span>
               <ArrowRight className="w-5 h-5" />
